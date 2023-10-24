@@ -112,6 +112,13 @@ function Confirm-DockerWindowsContainers
             ###########################################################################
             Write-Host "`tYou have now been switched to $DockerEngineOS Containers.`n" -ForegroundColor Green
         }
+
+        ###########################################################################
+        #   Display status.
+        ###########################################################################
+        else {
+            Write-Host "`tAlready using $DockerEngineOS Containers engine .`n" -ForegroundColor Green
+        }
     }
 
     ###########################################################################
